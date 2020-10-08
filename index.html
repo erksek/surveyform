@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>SurveyForm Proj</title>
+</head>
+<body>
+    <div class="container"></div>
+        <header>
+            <h1 id="title">Project Survey Form</h1>
+            <p id="description">Personality check</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-container">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required/>
+            </div>
+            <div class="form-container">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-container">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="18" max="100" placeholder="Age" required>
+            </div>
+            <div class="form-container">
+                <p>Your Gender</p>
+                <select id="dropdown" name="gender" required>
+                    <option disabled selected value>Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefernot">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-container">
+                <p>Would you prefer dark or light mode?</p>
+                <label><input name="mode" value="dark" type="radio">Dark</label>
+                <label><input name="mode" value="light" type="radio">Light</label>
+                <label><input name="mode" value="nosure" type="radio">Not sure</label>
+            </div>
+            <div class="form-container">
+                <p>What is your favorite color?</p>
+                <select id="favorite-color" name="favcolor" required>
+                    <option disabled select value>Select a color</option>
+                    <option value="blue">Blue</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="none">None</option>
+                </select>
+            </div>
+            <div class="form-container">
+                <p>Prefered Hobbies</p>
+                <label><input name="programming" value="programming" type="checkbox">Programming</label>
+                <label><input name="gaming" value="game" type="checkbox">Gaming</label>
+                <label><input name="outdoor" value="out" type="checkbox">Outdoor activities</label>
+                <label><input name="party" value="party" type="checkbox">Partying</label>
+                <label><input name="sleeping" value="sleep" type="checkbox">Sleeping</label>
+            </div>
+            <div class="form-container">
+                <p>Any comments?</p>
+                <textarea id="comment" name="comment" placeholder="Comment here..."></textarea>
+            </div>
+            <div class="form-container">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
